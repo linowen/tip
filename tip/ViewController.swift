@@ -37,9 +37,11 @@ class ViewController: UIViewController {
         let tip = Double(tipText)
         if amount != nil,tip != nil {
             let result = amount! * tip! * 0.01
-            showTF.text = "\(result)"
+            //showTF.text = "\(result).%2f"
+            showTF.text = String(format: "%.2f", result)
             let sum = amount! + result
-            show2TF.text = "\(sum)"
+            //show2TF.text = "\(sum).%2f"
+            show2TF.text = String(format: "%.2f", sum)
         }
         //上課教的按下按鈕時收鍵盤
         view.endEditing(true)
