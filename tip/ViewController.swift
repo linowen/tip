@@ -20,16 +20,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calcBT(_ sender: Any) {
-        //同學寫的按下按鈕時收鍵盤
-        /*
-        amountTF.resignFirstResponder()
-        tipTF.resignFirstResponder()
-        func textextFieldShouldReturnt(_ textField: UITextField ) -> Bool{
-            amountTF.resignFirstResponder()
-            tipTF.resignFirstResponder()
-            return true
-        }
-        */
         //計算小費
         let amountText = amountTF.text!
         let tipText = tipTF.text!
@@ -45,6 +35,16 @@ class ViewController: UIViewController {
         }
         //上課教的按下按鈕時收鍵盤
         view.endEditing(true)
+        //同學寫的按下按鈕時收鍵盤
+        /*
+        amountTF.resignFirstResponder()
+        tipTF.resignFirstResponder()
+        func textextFieldShouldReturnt(_ textField: UITextField ) -> Bool{
+            amountTF.resignFirstResponder()
+            tipTF.resignFirstResponder()
+            return true
+        }
+        */
     }
 }
 
